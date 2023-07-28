@@ -1,0 +1,97 @@
+/* base start  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+}
+/* base end */
+
+/*! HEADER START */
+header {
+  border-bottom: 1px solid #dee0ea;
+}
+
+.global-notification {
+  background-color: burlywood;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 12px;
+  color: aliceblue;
+}
+
+.global-notification a {
+  color: white;
+  font-weight: 600;
+}
+
+.header-row {
+  height: 90px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header-left .logo {
+  font-size: 24px;
+  font-weight: 500px;
+  display: flex;
+}
+
+.header-center .menu-list {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.header-center .navigation .menu-list {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.header-center .menu-list .menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.header-center .menu-list  i {
+  font-size: 12px;
+ 
+}
+
+/*! HEADER END */
