@@ -135,3 +135,13 @@
   .footer .brand-info {
     margin-bottom: 20px;
   }
+
+  .footer-copyright {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+  }
+
+  .footer-copyright .footer-menu {
+    margin-left: unset;
+  }
