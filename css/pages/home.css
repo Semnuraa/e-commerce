@@ -89,15 +89,13 @@
 
 .policy .policy-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 25px 0;
-}
-.policy .policy-list {
-  flex-direction: column;
+  flex-direction: row; /* Flex sıralamasını yatay olarak yapılandırma */
 }
 
-.policy .policy-list .policy-item {
+.policy .policy-item {
   display: flex;
   align-items: center;
   column-gap: 10px;
@@ -105,7 +103,6 @@
 
 .policy .policy-item i {
   font-size: 50px;
-  display: flex;
 }
 
 .policy .policy-item .policy-texts {
