@@ -55,6 +55,14 @@
 }
 /*! blogs end  */
 
+/*! responsive  */
+
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*! brands start  */
 .brands {
   margin: 40px 0;
@@ -125,9 +133,3 @@
 
 
 /*! responsive  */
-
-@media (max-width: 768px) {
-  .blogs .blog-list {
-    grid-template-columns: 1fr;
-  }
-}

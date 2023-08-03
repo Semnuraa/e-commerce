@@ -237,7 +237,7 @@ header .menu-dropdown-content a:hover {
     display: inline-block;
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 1px;
     font-size: 20px;
     cursor: pointer;
   }
