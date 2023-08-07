@@ -50,6 +50,9 @@
 .cart-form table img {
   width: 60px;
 }
+.cart-form .shop-table-wrapper {
+  overflow-x: auto;
+}
 
 .cart-form table > :not(caption) > * > * {
   padding: 8px 0;
@@ -60,6 +63,7 @@
   width: 100%;
   margin-top: 30px;
   font-size: 14px;
+  min-width: 595px;
 }
 
 .cart-form table thead th {
