@@ -1,3 +1,4 @@
+
 const config = {
     type: "carousel",
     perView: 4,

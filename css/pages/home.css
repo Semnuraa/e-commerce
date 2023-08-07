@@ -10,7 +10,6 @@
   margin-bottom: 4px;
 }
 
-
 /*! categories start  */
 .categories {
   margin: 40px 0;
@@ -31,7 +30,7 @@
 }
 
 .products .product-list {
-   /*   display: flex;
+  /*   display: flex;
   gap: 20px;
   flex-wrap: wrap; */
 }
@@ -89,8 +88,6 @@
 }
 /*! brands end  */
 
-
-
 /*! policy start  */
 
 .policy {
@@ -129,10 +126,6 @@
   font-size: 12px;
 }
 
-
-
 /*! policy end  */
-
-
 
 /*! responsive  */
