@@ -25,12 +25,12 @@
       <div class="container">
         <div class="header-wrapper">
           <div class="header-mobile">
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list" id="btn-menu"></i>
           </div>
           <div class="header-left">
             <a href="#" class="logo">LOGO</a>
           </div>
-          <div class="header-center">
+          <div class="header-center" id="sidebar">
             <nav class="navigation">
               <ul class="menu-list">
                 <li class="menu-list-item">
@@ -171,25 +171,23 @@
                 <li class="menu-list-item">
                   <a href="blog.html" class="menu-link">
                     Blog
-       
                   </a>
                 </li>
                 <li class="menu-list-item">
                   <a href="contact.html" class="menu-link">
                     Contact
-              
                   </a>
                 </li>
               </ul>
             </nav>
-            <i class="bi-x-circle"></i>
+            <i class="bi-x-circle" id="close-sidebar"></i>
           </div>
           <div class="header-right">
             <div class="header-right-links">
               <a href="#" class="header-account">
                 <i class="bi bi-person"></i>
               </a>
-              <button class="toggle-button">
+              <button class="search-button">
                 <i class="bi bi-search"></i>
               </button>
               <a href="#">
@@ -242,14 +240,14 @@
           </a>
         </div>
       </div>
-      <i class="bi bi-x-circle"></i>
+      <i class="bi bi-x-circle" id="close-search"></i>
     </div>
   </div>
   <!--! modal search end  -->
   <!--! slider start   -->
   <section class="slider">
     <div class="slider-elements">
-      <div class="slider-item">
+      <div class="slider-item fade">
         <div class="slider-image">
           <img src="img/slider/slider1.jpg" class="img-fluid" alt="">
         </div>
@@ -259,22 +257,42 @@
           <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
         </div>
       </div>
+      <div class="slider-item fade">
+        <div class="slider-image">
+          <img src="img/slider/slider2.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="container">
+          <p class="slider-title">SUMMER 2022</p>
+          <h2 class="slider-heading">Save up to 70%</h2>
+          <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+        </div>
+      </div>
+      <div class="slider-item fade">
+        <div class="slider-image">
+          <img src="img/slider/slider3.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="container">
+          <p class="slider-title">SUMMER 2022</p>
+          <h2 class="slider-heading">Save up to 70%</h2>
+          <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
+        </div>
+      </div>
       <div class="slider-buttons">
-        <button>
+        <button onclick="plusSlide(-1)">
           <i class="bi bi-chevron-left"></i>
         </button>
-        <button>
+        <button onclick="plusSlide(1)">
           <i class="bi bi-chevron-right"></i>
         </button>
       </div>
       <div class="slider-dots">
-        <button class="slider-dot">
+        <button class="slider-dot active" onclick="currentSlide(1)">
           <span></span>
         </button>
-        <button class="slider-dot">
+        <button class="slider-dot" onclick="currentSlide(2)">
           <span></span>
         </button>
-        <button class="slider-dot">
+        <button class="slider-dot" onclick="currentSlide(3)">
           <span></span>
         </button>
       </div>
@@ -286,7 +304,7 @@
     <div class="container">
       <div class="section-title">
         <h2>All Categories</h2>
-        <p>Summer Collection New Modern Design</p>
+        <p>Summer Collection New Morden Design</p>
       </div>
       <ul class="category-list">
         <li class="category-item">
@@ -316,6 +334,17 @@
         <li class="category-item">
           <a href="#">
             <img src="img/categories/categories5.png" alt="" class="category-image">
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
             <span class="category-title"> Collections </span>
           </a>
         </li>
@@ -334,7 +363,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Featured Products</h2>
-        <p>Summer Collection New Modern Design</p>
+        <p>Summer Collection New Morden Design</p>
       </div>
       <div class="product-wrapper">
         <ul class="product-list">
@@ -531,36 +560,6 @@
     </div>
   </section>
   <!--! products end  -->
-    <!--! blogs start  -->
-    <section class="blos">
-      <div class="container">
-        <div class="section-title">
-          <h2>New Arrivals</h2>
-          <p>Summer Collection New Morden Design</p>
-        </div>
-        <ul class="blog-list">
-          <li class="blog-item">
-            <a href="#" class="blog-image">
-              <img src="img/blogs/blog1.jpg" alt="">
-            </a>
-            <div class="blog-info">
-              <div class="blog-info-top">
-                <span>25 Feb, 2021 </span>
-                -
-                <span>0 Comments</span>
-              </div>
-              <div class="blog-info-center">
-                <a href="#">Aliquam hendrerit mi metus</a>
-              </div>
-              <div class="blog-info-bottom">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--! blogs end  -->
   <!--! campaigns start -->
   <section class="campaigns">
     <div class="container">
@@ -611,13 +610,12 @@
     </div>
   </section>
   <!--! campaigns end -->
-
   <!--! products start  -->
   <section class="products">
     <div class="container">
       <div class="section-title">
         <h2>New Arrivals</h2>
-        <p>Summer Collection New Modern Design</p>
+        <p>Summer Collection New Morden Design</p>
       </div>
       <div class="product-wrapper">
         <ul class="product-list">
@@ -814,13 +812,12 @@
     </div>
   </section>
   <!--! products end  -->
-
   <!--! blogs start  -->
   <section class="blogs">
     <div class="container">
       <div class="section-title">
         <h2>From Our Blog</h2>
-        <p>Summer Collection New Modern Design</p>
+        <p>Summer Collection New Morden Design</p>
       </div>
       <ul class="blog-list">
         <li class="blog-item">
@@ -882,37 +879,43 @@
   </section>
   <!--! blogs end  -->
   <!--! brands start  -->
- <section class="brands">
-  <div class="container">
-    <ul class="brand-list">
+  <section class="brands">
+    <div class="container">
+      <ul class="brand-list">
         <li class="brand-item">
-       <a href="#">
-          <img src="img/brands/brand1.png" alt="">
-       </a>
-      </li>
-      <li>
+          <a href="#">
+            <img src="img/brands/brand1.png" alt="">
+          </a>
+        </li>
         <li class="brand-item">
-       <a href="#">
-          <img src="img/brands/brand2.png" alt="">
-          <li class="brand-item">
-            <a href="#">
-               <img src="img/brands/brand3.png" alt="">
-            </a>
-           </li>
-           <li class="brand-item">
-            <a href="#">
-               <img src="img/brands/brand4.png" alt="">
-            </a>
-           </li> <li class="brand-item">
-       <a href="#">
-          <img src="img/brands/brand5.png" alt="">
-       </a>
-      </li>
-    </ul>
-  </div>
-</section>
+          <a href="#">
+            <img src="img/brands/brand2.png" alt="">
+          </a>
+        </li>
+        <li class="brand-item">
+          <a href="#">
+            <img src="img/brands/brand3.png" alt="">
+          </a>
+        </li>
+        <li class="brand-item">
+          <a href="#">
+            <img src="img/brands/brand4.png" alt="">
+          </a>
+        </li>
+        <li class="brand-item">
+          <a href="#">
+            <img src="img/brands/brand5.png" alt="">
+          </a>
+        </li>
+        <li class="brand-item">
+          <a href="#">
+            <img src="img/brands/brand1.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
   <!--! brands end  -->
-
   <!--! campaign single start  -->
   <section class="campaign-single">
     <div class="container">
@@ -928,8 +931,6 @@
     </div>
   </section>
   <!--! campaign single end  -->
-
-
   <!--! policy start  -->
   <section class="policy">
     <div class="container">
@@ -966,7 +967,6 @@
     </div>
   </section>
   <!--! policy end  -->
-
   <!--! footer start  -->
   <footer class="footer">
     <div class="subscribe-row">
@@ -1122,7 +1122,7 @@
         <div class="footer-copyright">
           <div class="site-copyright">
             <p>
-              Copyright 2022 © E-Commerce Theme. All right reserved. Powered by Semnuraa.
+              Copyright 2022 © E-Commerce Theme. All right reserved. Powered by Emin Basbayan.
             </p>
           </div>
           <a href="#">
@@ -1145,7 +1145,6 @@
       </div>
     </div>
   </footer>
-
   <!--! footer end  -->
   <script src="js/index.js"></script>
 </body>
