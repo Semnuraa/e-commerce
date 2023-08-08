@@ -92,7 +92,7 @@ header {
   font-size: 23px;
 }
 
-.header-right .-button {
+.header-right .search-button {
   border: none;
   background-color: transparent;
 }
