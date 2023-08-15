@@ -1,11 +1,16 @@
 /*! header start  */
+
 header {
   border-bottom: 1px solid #dee0ea;
-  position: relative;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 10;
 }
 
 .global-notification {
-  background-color: rgb(172, 139, 97);
+  background-color: #daa06d;
   padding: 14px 0;
   text-align: center;
   font-size: 12px;
@@ -38,6 +43,7 @@ header {
 .header-center .bi-x-circle {
   display: none;
 }
+
 .header-center .navigation .menu-list {
   display: flex;
   column-gap: 30px;
@@ -63,13 +69,14 @@ header {
   content: "";
   width: 0;
   height: 1px;
-  background-color: rgb(41, 40, 39);
+  background-color: #daa06d;
   position: absolute;
   bottom: -2px;
   left: 50%;
   transform: translate(-50%);
   transition: 0.2s ease width;
 }
+
 .header-center .menu-list .menu-list-item:hover .menu-link::after {
   width: 100%;
 }
@@ -105,10 +112,11 @@ header {
 .header-right .header-cart {
   position: relative;
 }
+
 .header-right .header-cart-link .header-cart-count {
   width: 16px;
   height: 16px;
-  background-color: rgb(172, 139, 97);
+  background-color: #daa06d;
   color: white;
   font-size: 10px;
   border-radius: 100%;
@@ -120,6 +128,7 @@ header {
   justify-content: center;
   font-weight: 500;
 }
+
 /*? menu dropdown start  */
 header .menu-dropdown-wrapper {
   position: absolute;
@@ -131,7 +140,7 @@ header .menu-dropdown-wrapper {
   z-index: 1;
 }
 
-header .menu-dropdown-content header .menu-dropdown-content a:hover {
+header .menu-dropdown-content {
   width: 220px;
   background-color: #fff;
   border: 1px solid #dee0ea;
@@ -148,8 +157,9 @@ header .menu-dropdown-content a {
 }
 
 header .menu-dropdown-content a:hover {
-  color: rgb(172, 139, 97);
+  color: #1367ef;
 }
+
 .header-center .menu-list .menu-list-item:hover .menu-dropdown-wrapper {
   opacity: 1;
   visibility: visible;
@@ -162,6 +172,7 @@ header .menu-dropdown-content a:hover {
   display: flex;
   column-gap: 50px;
 }
+
 .megamenu-wrapper .menu-dropdown-wrapper {
   left: 0;
   width: 100%;
@@ -177,11 +188,13 @@ header .menu-dropdown-content a:hover {
   display: flex;
   column-gap: 50px;
 }
+
 .megamenu-wrapper .megamenu-products-title {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
 }
+
 .megamenu-wrapper .megamenu-menu-list {
   display: flex;
   flex-direction: column;
@@ -206,8 +219,11 @@ header .menu-dropdown-content a:hover {
 .megamenu-wrapper .megamenu-single-button {
   margin-top: 5px;
 }
+
 /*? menu dropdown end  */
+
 /*! header end  */
+
 /* header responsive */
 @media (max-width: 650px) {
   .header-center {

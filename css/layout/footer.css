@@ -64,6 +64,7 @@
   align-items: center;
   column-gap: 10px;
 }
+
 /*! subscribe end  */
 
 /*! widgets start  */
@@ -110,6 +111,14 @@
   row-gap: 5px;
 }
 
+.footer-widgets .widget-nav-menu ul li a {
+  transition: 0.2s ease all;
+}
+
+.footer-widgets .widget-nav-menu ul li a:hover {
+  opacity: 0.5;
+}
+
 /*! widgets end  */
 
 /*! copyright start  */
@@ -148,17 +157,8 @@
     flex-direction: column;
     row-gap: 20px;
   }
-}
-.footer-copyright {
-  flex-direction: column;
-  text-align: center;
-  row-gap: 10px;
-}
 
-.footer-copyright .footer-menu {
-  margin-left: unset;
-}
-.footer .brand-info {
+  .footer .brand-info {
     margin-bottom: 20px;
   }
 
@@ -183,3 +183,4 @@
   .footer-copyright .footer-menu {
     margin-left: unset;
   }
+}
