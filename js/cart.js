@@ -1,7 +1,8 @@
 let cart = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart"))
   : [];
-function displayCartProduct() 
+
+function displayCartProduct() {
   const cartWrapper = document.querySelector(".cart-wrapper");
   let result = "";
   cart.forEach((item) => {
@@ -15,21 +16,22 @@ function displayCartProduct()
     <td>${item.name}</td>
     <td>$${item.price.newPrice.toFixed(2)}</td>
     <td class="product-quantity">${item.quantity}</td>
-    <td class="product-subtotal">${(
+    <td class="product-subtotal">$${(
       item.price.newPrice * item.quantity
     ).toFixed(2)}</td>
    </tr>
    `;
   });
-function removeCartItem() {
-  
   cartWrapper.innerHTML = result;
   removeCartItem();
 }
+
 displayCartProduct();
+
 function removeCartItem() {
   const btnDeleteCart = document.querySelectorAll(".delete-cart");
   let cartItems = document.querySelector(".header-cart-count");
+
   btnDeleteCart.forEach((button) => {
     button.addEventListener("click", function (e) {
       const id = e.target.dataset.id;

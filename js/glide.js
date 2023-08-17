@@ -1,4 +1,5 @@
 const productsContainer = document.getElementById("product-list");
+
 export function product1() {
   const config = {
     perView: 4,
@@ -16,8 +17,10 @@ export function product1() {
       },
     },
   };
+
   productsContainer && new Glide(".product-carousel", config).mount();
 }
+
 const config2 = {
   type: "carousel",
   perView: 4,
